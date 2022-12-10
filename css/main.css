@@ -367,18 +367,18 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .basis {
-    max-width: 1600px;
+    width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/basic/Imgdesk@1x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/basic/Imgdesk@1x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/basic/Imgdesk@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/basic/Imgdesk@1x.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .basis {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/basic/Imgdesk@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/basic/Imgdesk@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/basic/Imgdesk@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/basic/Imgdesk@2x.jpg);
   }
 }
 
@@ -638,6 +638,20 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .team__text {
+    width: 270px;
+  }
+}
+
+.list {
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .list {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list {
     width: 270px;
   }
 }
