@@ -1,0 +1,25 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+.header__container, .header__nav, .contact {
+    display: flex;
+}
+.nav, .contact {
+    list-style: none;
+    text-decoration: none;
+    color: currentColor;
+}
+.header .contact {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    
+    @media screen and (min-width: $desktop) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+.header .nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+

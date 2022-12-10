@@ -1,0 +1,141 @@
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+    fill: #2196F3;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  background-color: #fff;
+  z-index: 999;
+  
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+  @media (min-width: 768px) {
+    display: none;
+  } 
+}
+.menu-container.is-open {
+  transform: translateX(0);
+}
+  
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #fff;
+}
+  
+.mobile-menu {
+  margin-bottom: auto;
+  list-style: none;
+}
+
+.mobile-menu .nav__link {
+  @media screen and (max-width: 767px) {
+    color: var(--link-text-color);
+    font-weight: 500;
+    font-size: 40px;        
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    margin-bottom: 32px;
+      
+    position: relative;
+    transition: color var(--trns-time-function); 
+  }
+}
+
+.mobile-menu .nav__link:hover,
+.mobile-menu .nav__link:focus {
+  @media screen and (max-width: 767px) {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+.mobile-menu .nav__link--current {
+  @media screen and (max-width: 767px) {
+      color: #2196F3;
+  }
+}
+  
+.mobile-contact {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+
+.mobile-contact .tel__link {
+  color: #2196F3;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  margin-bottom: 32px;
+}
+.mobile-contact .mail__link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  margin-bottom: 64px;
+}
+  
+.mobile-socials {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none; 
+  gap: 20px; 
+}
+.link:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+.mobile-socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #2196F3;
+  font-weight: 500;
+  font-size: 18px;        
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}

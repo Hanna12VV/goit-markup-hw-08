@@ -1,0 +1,45 @@
+.contact {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        display: block;
+        margin-left: auto;
+        gap: 10px;
+    }
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}
+.contact .mail__link {
+    @media screen and (max-width: 1199px) {
+       margin-bottom: 10px; 
+    }
+}
+.contact .mail__link, .contact .tel__link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition: color var(--trns-time-function); 
+}
+.mail__link, .tel__link {
+    display: flex;
+    align-items: center;  
+}
+.contact__icon {
+    margin-right: 8px;
+    stroke: var(--primary-text-color);
+    fill: transparent;
+}
+.nav__link:hover, .mail__link:hover, .tel__link:hover, 
+.nav__link:focus, .mail__link:focus, .tel__link:focus {
+    color: var(--accent-color);
+} 
+.mail__link:hover .contact__icon, .mail__link:focus .contact__icon,
+.tel__link:hover .contact__icon, .tel__link:focus .contact__icon {
+    fill: currentColor;
+} 

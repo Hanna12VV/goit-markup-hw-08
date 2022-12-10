@@ -1,0 +1,61 @@
+.nav {
+    display: none;
+    
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+        gap: 50px; 
+        margin-right: 90px;
+    }
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+        gap: 50px; 
+        margin-right: 305px;
+    }
+}
+.nav__link {
+    @media screen and (min-width: 768px) {
+        color: var(--link-text-color);
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        display: block;
+    
+        position: relative;
+        transition: color var(--trns-time-function); 
+    }
+}
+    
+.nav__link:hover,
+.nav__link:focus {
+    @media screen and (min-width: 768px) {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+.nav__link--current {
+    @media screen and (min-width: 768px) {
+        color: var(--accent-color); 
+    }
+}
+
+.nav__link--current::after {  
+    @media screen and (min-width: 768px) {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--accent-color);
+        
+        transition: background-color var(--trns-time-function);
+
+        opacity: 1;
+        transform: scaleX(1);
+    }         
+}

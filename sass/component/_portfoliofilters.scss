@@ -1,0 +1,40 @@
+.portfolio__filters {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+
+    list-style: none;
+    text-decoration: none;
+    color: currentColor;
+}
+.filters__btn {
+    color: var(--link-text-color) ;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    cursor: pointer;
+
+    background-color: #F5F4FA;
+    display: inline-block;
+    border-radius: 4px;
+    min-width: 125px;
+    padding: 5.69px 22px;
+    border: 1px solid transparent;
+    box-shadow: none;
+
+    transition: color var(--trns-time-function), background-color var(--trns-time-function), box-shadow var(--trns-time-function);
+
+    &:hover, &:focus {
+        background-color: var(--accent-color);
+        color: var(--primary-white-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px; 
+    }
+}
+.filters__btn:first-child {
+    min-width: 73px;
+    padding: 5.69px 25px;
+}
