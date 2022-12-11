@@ -23,12 +23,23 @@
 
 .team-avatar {
     overflow: hidden;
+    max-width: 450px;
+    width: 100%;
+    
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 270px;
+    }
   }
   
   .text {
     padding: 30px 0;
     text-align: center;
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
     background-color: #FFFFFF;
 
     @media screen and (min-width: $tablet) {
@@ -51,7 +62,8 @@
   .team__text {
     font-size: 16px;
     line-height: 1.18;
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
     margin-bottom: 16px;
 
     @media screen and (min-width: $tablet) {
@@ -64,15 +76,16 @@
   }
   
   .list {
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
 
     @media screen and (min-width: $tablet) {
       width: 354px;
   }
 
-  @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
       width: 270px;
-  }
+    }
   }
   
   .team__list .list {

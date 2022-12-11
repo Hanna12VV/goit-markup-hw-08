@@ -22,14 +22,19 @@
     transform: translate(-50%, -50%);
     opacity: 1;
     
-    min-width: 450px;
-    min-height: 609px;
+    max-width: 450px;
+    max-height: 609px;
     background-color: var(--primary-white-color);
     border-radius: 4px;
     padding: 40px;
 
     transition: transform 500ms ease-out, opacity 500ms ease-out;
     
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 609px;
+    }
+
     @media screen and (min-width: 1200px) {
         min-width: 528px;
         min-height: 581px;
