@@ -35,6 +35,25 @@
     stroke: var(--primary-text-color);
     fill: transparent;
 }
+.mail__link .contact__icon {
+    width: 14px;
+    height: 10px;
+
+    @media screen and (min-width: $desktop) {
+        width: 16px;
+        height: 12px;
+    }
+}  
+.tel__link .contact__icon {
+    width: 10px;
+    height: 14px;
+
+    @media screen and (min-width: $desktop) {
+        width: 10px;
+        height: 16px;
+    }
+}  
+
 .nav__link:hover, .mail__link:hover, .tel__link:hover, 
 .nav__link:focus, .mail__link:focus, .tel__link:focus {
     color: var(--accent-color);
